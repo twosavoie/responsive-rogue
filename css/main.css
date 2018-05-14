@@ -1,0 +1,249 @@
+html {
+    font-size: 16px;
+}
+
+
+body {
+	max-width: 1200px; /* don't need for responsive? */
+	margin: 0 auto;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+h1,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+}
+
+/***** logo-nav module CSS  *****/
+.logo-nav {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.875em;
+}
+
+.logo-nav h1 {
+    font-size: 1em;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom:3px solid #77a466;
+}
+.logo-nav h1 span {
+	color: #77a466;
+}
+
+.logo-nav nav {
+	text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+/*.logo-nav .first-half nav {
+  margin-bottom: -10px;
+}
+.logo-nav .second-half nav {
+  margin-top: -10px;
+}*/
+.logo-nav nav a {
+  display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .7em;
+	color:#77a466;
+}
+
+/****** image CSS *******/
+.main-image img {
+	width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+/****** top-section module CSS *******/
+.top-section {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.top-section h3 {
+	font-size: 1.4em;
+  text-align: center;
+	text-align: center;
+	padding: 15px;
+  color:#77a466;
+}
+.top-section p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/****** bottom-section module CSS *******/
+.bottom-section {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.bottom-section h4 {
+  font-size: 1.2em;
+  text-align: center;
+	padding-top: 2em;
+  border-top: 3px solid #eee;
+}
+.bottom-section .menu {
+  list-style: none;
+  color:#77a466;
+  line-height: 1.5em;
+}
+.bottom-section .reviews {
+	color: #333;
+  line-height: 1.5em;
+	font-size: 1em;
+}
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+  text-align: center;
+}
+
+/******* footer CSS *******/
+.footer {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border-top: 3px solid #eee;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.footer h4 {
+  padding-top: 1.5em;
+  line-height: 1.5em;
+  font-size: 1em;
+  text-align: center;
+}
+.footer span {
+	font-family: "Wisdom Script", script;
+	text-transform: lowercase;
+	color: #77a466;
+}
+
+/******* Tablets larger than 768px wide *******/
+@media (min-width: 768px) {
+  .logo-nav nav a{
+    display: inline;
+    padding: 0 5px;
+  }
+  .main-image img {
+    clear: both;
+  }
+	.bottom-section .menu {
+    text-align: center;
+  }
+}
+
+/******** Monitors larger than 940px wide ********/  /***** changed to 1025 for ipad pro and landscape tablet view ******/
+@media (min-width: 1025px) {
+/**** logo-nav module CSS *****/
+  .logo-nav {
+    width: 100%;
+  }
+  .logo-nav h1 {
+  	text-align: left;
+  	float: left;
+  	padding: 35px 0;
+    border-bottom: none;
+  }
+  .logo-nav nav {
+    float: right;
+    padding: 45px 0px;
+  }
+  .logo-nav nav a {
+    padding: 0 10px;
+    font-size: .5em;
+  }
+
+/* top-section module CSS *****/
+  .top-section {
+    width: 100%;
+  }
+  .top-section .main-image img {
+  	width: 100%;
+    margin: 0;
+    border-top: 3px solid #77a466;
+  	border-bottom: 3px solid #77a466;
+  }
+
+  .top-section h3 {
+  	text-align: left;
+  	padding: 10px 0px 0px 0px;
+    font-size: 1em;
+  }
+
+  .top-section p {
+    padding: 0px;
+  }
+
+/***** bottom-section module CSS *****/
+  .bottom-section {
+    width: 100%;
+  }
+  .bottom-section h4 {
+    border-top: none;
+    text-align: left;
+    padding-top: 10px;
+    font-size: .9em;
+  }
+  .bottom-section .menu {
+  	padding-left: 0px;
+  }
+  .bottom-section .menu li {
+      text-align: left;
+      line-height: 2em;
+  }
+  .bottom-section .address {
+    text-align: left;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+  	width: 29%;
+  	height: auto;
+  	float: left;
+  	border-top: 1px solid #eee;
+    padding-right: 10px;
+  }
+
+  .section-one {
+  	padding-right: 35px;
+  }
+  .section-two {
+    padding-left: 39px;
+    padding-right: 39px;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+  .section-three {
+    padding-left: 31px;
+  }
+
+
+  /****** footer module CSS ******/
+    .footer {
+    	width: 100%;
+    	height: 50px;
+    	clear: both;
+    	text-align: center;
+      font-size: 1em;
+    }
+
+}
